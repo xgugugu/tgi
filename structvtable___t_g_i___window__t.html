@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiny Graphics Interfaces: vtable_TGI_Window_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Tiny Graphics Interfaces
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">vtable_TGI_Window_t结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>窗口对象的虚函数表（正常使用无需了解）  
+ <a href="structvtable___t_g_i___window__t.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="tgi_8h_source.html">tgi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5b1c2907b3c64fad52ddf9f91860590e"><td class="memItemLeft" align="right" valign="top"><a id="a5b1c2907b3c64fad52ddf9f91860590e" name="a5b1c2907b3c64fad52ddf9f91860590e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>void</b> (TGIAPI *free)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self)</td></tr>
+<tr class="separator:a5b1c2907b3c64fad52ddf9f91860590e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab333ed675c42a270c02a498b3413186b"><td class="memItemLeft" align="right" valign="top"><a id="ab333ed675c42a270c02a498b3413186b" name="ab333ed675c42a270c02a498b3413186b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>void</b> (TGIAPI *on_close)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:ab333ed675c42a270c02a498b3413186b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174066517031fb4ada58eba986d129e5"><td class="memItemLeft" align="right" valign="top"><a id="a174066517031fb4ada58eba986d129e5" name="a174066517031fb4ada58eba986d129e5"></a>
+int TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b> (<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self))</td></tr>
+<tr class="separator:a174066517031fb4ada58eba986d129e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23dde25c813204592461a1922576019"><td class="memItemLeft" align="right" valign="top"><a id="aa23dde25c813204592461a1922576019" name="aa23dde25c813204592461a1922576019"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>void</b> (TGIAPI *on_paint)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:aa23dde25c813204592461a1922576019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dfb04df654ea5b8e8a3515d3d5c5053"><td class="memItemLeft" align="right" valign="top"><a id="a8dfb04df654ea5b8e8a3515d3d5c5053" name="a8dfb04df654ea5b8e8a3515d3d5c5053"></a>
+void TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b> (<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self))</td></tr>
+<tr class="separator:a8dfb04df654ea5b8e8a3515d3d5c5053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd965725f664885bb034b6eea5fbdb9"><td class="memItemLeft" align="right" valign="top"><a id="a2cd965725f664885bb034b6eea5fbdb9" name="a2cd965725f664885bb034b6eea5fbdb9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>void</b> (TGIAPI *on_size)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:a2cd965725f664885bb034b6eea5fbdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9215dfb2a741edeecb1817cf81e66d1a"><td class="memItemLeft" align="right" valign="top"><a id="a9215dfb2a741edeecb1817cf81e66d1a" name="a9215dfb2a741edeecb1817cf81e66d1a"></a>
+void TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b> (<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self, float new_width, float new_height))</td></tr>
+<tr class="separator:a9215dfb2a741edeecb1817cf81e66d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742f1e710ac0410a26253f8f4e8fe95e"><td class="memItemLeft" align="right" valign="top"><a id="a742f1e710ac0410a26253f8f4e8fe95e" name="a742f1e710ac0410a26253f8f4e8fe95e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>void</b> (TGIAPI *on_key)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:a742f1e710ac0410a26253f8f4e8fe95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013e23e5737c0b374bc6e030aef6d121"><td class="memItemLeft" align="right" valign="top"><a id="a013e23e5737c0b374bc6e030aef6d121" name="a013e23e5737c0b374bc6e030aef6d121"></a>
+void TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b> (<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self, <a class="el" href="struct_t_g_i___key_event.html">TGI_KeyEvent</a> *event))</td></tr>
+<tr class="separator:a013e23e5737c0b374bc6e030aef6d121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70c240ec811ee406522acaa1b2e0a2f"><td class="memItemLeft" align="right" valign="top"><a id="ac70c240ec811ee406522acaa1b2e0a2f" name="ac70c240ec811ee406522acaa1b2e0a2f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>void</b> (TGIAPI *on_mouse)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:ac70c240ec811ee406522acaa1b2e0a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af280a081294a53c0e3eb2b976a424967"><td class="memItemLeft" align="right" valign="top"><a id="af280a081294a53c0e3eb2b976a424967" name="af280a081294a53c0e3eb2b976a424967"></a>
+void TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b> (<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self, <a class="el" href="struct_t_g_i___mouse_event.html">TGI_MouseEvent</a> *event))</td></tr>
+<tr class="separator:af280a081294a53c0e3eb2b976a424967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef80dc34592d90939415d4a022c38d7e"><td class="memItemLeft" align="right" valign="top"><a id="aef80dc34592d90939415d4a022c38d7e" name="aef80dc34592d90939415d4a022c38d7e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>int</b> (TGIAPI *is_key_down)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:aef80dc34592d90939415d4a022c38d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fec8aa1bd9ce489faf5adaa3ac5da93"><td class="memItemLeft" align="right" valign="top"><a id="a9fec8aa1bd9ce489faf5adaa3ac5da93" name="a9fec8aa1bd9ce489faf5adaa3ac5da93"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>void</b> (TGIAPI *show)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self)</td></tr>
+<tr class="separator:a9fec8aa1bd9ce489faf5adaa3ac5da93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b72a699e8e1d8cb81fb4b401f7c865f"><td class="memItemLeft" align="right" valign="top"><a id="a4b72a699e8e1d8cb81fb4b401f7c865f" name="a4b72a699e8e1d8cb81fb4b401f7c865f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>void</b> (TGIAPI *paint)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self)</td></tr>
+<tr class="separator:a4b72a699e8e1d8cb81fb4b401f7c865f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4edd7b234a2410c138bca656333f7ca6"><td class="memItemLeft" align="right" valign="top"><a id="a4edd7b234a2410c138bca656333f7ca6" name="a4edd7b234a2410c138bca656333f7ca6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>int</b> (TGIAPI *set_style)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:a4edd7b234a2410c138bca656333f7ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890ab42def4709eadbf30e54fdf2e144"><td class="memItemLeft" align="right" valign="top"><a id="a890ab42def4709eadbf30e54fdf2e144" name="a890ab42def4709eadbf30e54fdf2e144"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>int</b> (TGIAPI *set_size)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:a890ab42def4709eadbf30e54fdf2e144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67901c29ec84a7e385ef2ab3226fd0c"><td class="memItemLeft" align="right" valign="top"><a id="ad67901c29ec84a7e385ef2ab3226fd0c" name="ad67901c29ec84a7e385ef2ab3226fd0c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>int</b> (TGIAPI *get_size)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:ad67901c29ec84a7e385ef2ab3226fd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc971fc45e1e3367751bda31b293d066"><td class="memItemLeft" align="right" valign="top"><a id="adc971fc45e1e3367751bda31b293d066" name="adc971fc45e1e3367751bda31b293d066"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>int</b> (TGIAPI *set_min_size)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:adc971fc45e1e3367751bda31b293d066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fd0c01fa9a85909c73494060e6b960"><td class="memItemLeft" align="right" valign="top"><a id="ab2fd0c01fa9a85909c73494060e6b960" name="ab2fd0c01fa9a85909c73494060e6b960"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>int</b> (TGIAPI *set_max_size)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:ab2fd0c01fa9a85909c73494060e6b960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fd869d712a871fa051e5e19de9da6f"><td class="memItemLeft" align="right" valign="top"><a id="a06fd869d712a871fa051e5e19de9da6f" name="a06fd869d712a871fa051e5e19de9da6f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>int</b> (TGIAPI *set_title)(<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self</td></tr>
+<tr class="separator:a06fd869d712a871fa051e5e19de9da6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f736ebd798db57c130f4888048bf5c"><td class="memItemLeft" align="right" valign="top"><a id="a13f736ebd798db57c130f4888048bf5c" name="a13f736ebd798db57c130f4888048bf5c"></a>
+<a class="el" href="struct_t_g_i___graphics.html">TGI_Graphics</a> *TGIAPI *&#160;</td><td class="memItemRight" valign="bottom"><b>create_graphics</b> (<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self)</td></tr>
+<tr class="separator:a13f736ebd798db57c130f4888048bf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2fb7a9fc9436cbe3930528d84698e3f"><td class="memItemLeft" align="right" valign="top"><a id="ac2fb7a9fc9436cbe3930528d84698e3f" name="ac2fb7a9fc9436cbe3930528d84698e3f"></a>
+<a class="el" href="struct_t_g_i___image.html">TGI_Image</a> *TGIAPI *&#160;</td><td class="memItemRight" valign="bottom"><b>create_image</b> (<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self)</td></tr>
+<tr class="separator:ac2fb7a9fc9436cbe3930528d84698e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:acad36f7a1211e9e9da68e181667d9c3f"><td class="memItemLeft" align="right" valign="top"><a id="acad36f7a1211e9e9da68e181667d9c3f" name="acad36f7a1211e9e9da68e181667d9c3f"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>key</b></td></tr>
+<tr class="separator:acad36f7a1211e9e9da68e181667d9c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0982da6e21efa3d88511f815f583dc65"><td class="memItemLeft" align="right" valign="top"><a id="a0982da6e21efa3d88511f815f583dc65" name="a0982da6e21efa3d88511f815f583dc65"></a>
+<a class="el" href="tgi_8h.html#adc16ce6d314d1e2208bc5a79acceaf52">TGI_WindowStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>style</b></td></tr>
+<tr class="separator:a0982da6e21efa3d88511f815f583dc65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2474a5474cbff19523a51eb1de01cda4"><td class="memItemLeft" align="right" valign="top"><a id="a2474a5474cbff19523a51eb1de01cda4" name="a2474a5474cbff19523a51eb1de01cda4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="separator:a2474a5474cbff19523a51eb1de01cda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7b4b8a6ef510e136071efbc9cd9a58"><td class="memItemLeft" align="right" valign="top"><a id="adc7b4b8a6ef510e136071efbc9cd9a58" name="adc7b4b8a6ef510e136071efbc9cd9a58"></a>
+int int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
+<tr class="separator:adc7b4b8a6ef510e136071efbc9cd9a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10d4dd233a734fbf076aa1cec23c6e4"><td class="memItemLeft" align="right" valign="top"><a id="ae10d4dd233a734fbf076aa1cec23c6e4" name="ae10d4dd233a734fbf076aa1cec23c6e4"></a>
+<a class="el" href="struct_t_g_i___rect.html">TGI_Rect</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>rect</b></td></tr>
+<tr class="separator:ae10d4dd233a734fbf076aa1cec23c6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8214780964530800368b406c681fd1d9"><td class="memItemLeft" align="right" valign="top"><a id="a8214780964530800368b406c681fd1d9" name="a8214780964530800368b406c681fd1d9"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>title</b></td></tr>
+<tr class="separator:a8214780964530800368b406c681fd1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>窗口对象的虚函数表（正常使用无需了解） </p>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
+<li>C:/Users/xczws/Documents/tgi/src/<a class="el" href="tgi_8h_source.html">tgi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

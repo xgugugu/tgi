@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiny Graphics Interfaces: TGI_Graphics结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Tiny Graphics Interfaces
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TGI_Graphics结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>图形对象类型  
+ <a href="struct_t_g_i___graphics.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="tgi_8h_source.html">tgi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a3312b8c64cea3f636f94f0a2fdec8100"><td class="memItemLeft" align="right" valign="top"><a id="a3312b8c64cea3f636f94f0a2fdec8100" name="a3312b8c64cea3f636f94f0a2fdec8100"></a>
+const struct <a class="el" href="structvtable___t_g_i___graphics__t.html">vtable_TGI_Graphics_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>vptr</b></td></tr>
+<tr class="separator:a3312b8c64cea3f636f94f0a2fdec8100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>图形对象类型 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="tgi_8h.html#af1c311746bc170ca09f30e88b6491422" title="创建绘图对象">tgi_window_create_graphics</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a189358532c0f04d930bf924dc5e7757a" title="开始在图片上绘图">tgi_image_create_graphics</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#abc8e2971f8f011336f4d2e44c9b5093b" title="结束绘图并释放资源">tgi_graphics_free</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a902c1dbf17be48ac0d26e4c1dedaf3d8" title="绘制背景颜色">tgi_graphics_clear</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a260597bade1671777ef92003ac76be4b" title="设置画笔颜色">tgi_graphics_set_color</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a45cf95ca7f187756c8b6a2e32326a627" title="设置画笔宽度">tgi_graphics_set_width</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a54fdb3fc1ae62ce5671ac966fbd21e6e" title="绘制一条从(x1, y1)到(x2,y2)的直线">tgi_graphics_draw_line</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#aa180b7ca6335e3a421b7291ed098a9ef" title="绘制一条弧线">tgi_graphics_draw_arc</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#afdd9dec0b57bc96ec6366ecfa5428913" title="绘制一个矩形">tgi_graphics_draw_rect</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a8a23d4db3e2e1691522aa0fda87c1606" title="绘制一个椭圆">tgi_graphics_draw_ellipse</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a6547498cd0f1a52634107317ec787031" title="绘制一个扇形">tgi_graphics_draw_pie</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#ab9e39aa7a3ac7c58571487626bc1eb3b" title="绘制一个多边形">tgi_graphics_draw_polygon</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#afe9d77de007a9524d7a0896bb8b7f7d6" title="填充一个矩形">tgi_graphics_fill_rect</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a88c53e67e4910238a20e3ced1558e78b" title="填充一个椭圆">tgi_graphics_fill_ellipse</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a663f1cc5cde9770cb0a70560323bf61b" title="填充一个扇形">tgi_graphics_fill_pie</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a4034ec18ea22aed9454566d6dddae1b1" title="填充一个多边形">tgi_graphics_fill_polygon</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a755ff36f9338fd0480a3b9dd7afc0a3a" title="在指定的位置绘制一个图片">tgi_graphics_draw_image</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#adb8b8a2de06ac45bb05ae904c7858338" title="在指定的矩形内绘制一个图片">tgi_graphics_draw_image_rect</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a171db09262d753ed2b852b386aa761cd" title="在指定的位置绘制图片的部分">tgi_graphics_draw_image_ex</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a020b8ed8f3a9a9d5e6abfe569df4216e" title="在指定位置绘制文字">tgi_graphics_draw_text</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#afbf12e97355c58847da5f7bc250354e9" title="在指定矩形绘制文字">tgi_graphics_draw_text_rect</a> </dd></dl>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
+<li>C:/Users/xczws/Documents/tgi/src/<a class="el" href="tgi_8h_source.html">tgi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

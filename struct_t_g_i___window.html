@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiny Graphics Interfaces: TGI_Window结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Tiny Graphics Interfaces
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TGI_Window结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>窗口对象类型  
+ <a href="struct_t_g_i___window.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="tgi_8h_source.html">tgi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:ac186428f36361cc00bf092bb9c809bf1"><td class="memItemLeft" align="right" valign="top"><a id="ac186428f36361cc00bf092bb9c809bf1" name="ac186428f36361cc00bf092bb9c809bf1"></a>
+const struct <a class="el" href="structvtable___t_g_i___window__t.html">vtable_TGI_Window_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>vptr</b></td></tr>
+<tr class="separator:ac186428f36361cc00bf092bb9c809bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>窗口对象类型 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="tgi_8h.html#aca5cbccc5690f9211927527769e469b0" title="创建一个窗口">tgi_application_create_window</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#aad5cea148bea3c2c3ee2ecb5757f55fb" title="关闭窗口并释放资源">tgi_window_free</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#ae99a883a6ff33e71bc8eb0b9e2361c05" title="设置窗口关闭时将会调用的函数">tgi_window_on_close</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#ac8e2443ff3f58910efdb7f8234392d87" title="设置窗口需要绘制时将会调用的函数">tgi_window_on_paint</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a25d1a655ba365376db70bf626c52bb5d" title="设置窗口改变大小时将会调用的函数">tgi_window_on_size</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a8bf854d9abfc536abce6aaecf6ce2ecf" title="设置出现键盘事件时将会调用的函数">tgi_window_on_key</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a3137c08d96fc6e7ebb1d737b10e2f09b" title="设置出现鼠标事件时将会调用的函数">tgi_window_on_mouse</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a0653cc919c0991a2d6f93b348b2ceb9e" title="判断键盘按键是否按下">tgi_window_is_key_down</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a8395d002f7841a67c4b8085a55092dbd" title="激活窗口并以当前大小和位置显示窗口">tgi_window_show</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#acf0a4d2b6ddc3feff1c1da96095b20f3" title="调用设置的 on_paint 回调函数">tgi_window_paint</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a72e1d9968e73a95cb75a2c9a46b43466" title="设置窗口风格">tgi_window_set_style</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#ac81c50b4ce422d1bbdf7880ef1febb64" title="设置窗口的大小">tgi_window_set_size</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#aff9e5b2246c4a88bdbc526ba72d481e1" title="获取窗口大小">tgi_window_get_size</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#aa07d14b2a4139d9dd9247ffa3fd4c964" title="设置窗口的最大小大小">tgi_window_set_min_size</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#ac6d346b9bc76d62b4313c4ebba89ed9c" title="设置窗口的最大大小">tgi_window_set_max_size</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a71320b3793217e8d1abd127b500847b5" title="设置窗口的标题">tgi_window_set_title</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#af1c311746bc170ca09f30e88b6491422" title="创建绘图对象">tgi_window_create_graphics</a> </dd>
+<dd>
+<a class="el" href="tgi_8h.html#a35947d932ae3f151e86caf2e10d2ff18" title="创建与窗口关联的图像对象">tgi_window_create_image</a> </dd></dl>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
+<li>C:/Users/xczws/Documents/tgi/src/<a class="el" href="tgi_8h_source.html">tgi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
