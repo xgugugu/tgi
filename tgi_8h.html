@@ -278,9 +278,9 @@ typedef struct <a class="el" href="struct_t_g_i___rect.html">TGI_Rect</a>&#160;<
 <tr class="memitem:aa4c8a96780cbb72037a54f824fc57800"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_t_g_i___font.html">TGI_Font</a> *TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tgi_8h.html#aa4c8a96780cbb72037a54f824fc57800">tgi_application_create_font</a> (<a class="el" href="struct_t_g_i___application.html">TGI_Application</a> *self, const char *name, float size, <a class="el" href="tgi_8h.html#a04b51163fe11e71f2dd2d61aa4c36f21">TGI_FontStyle</a> style)</td></tr>
 <tr class="memdesc:aa4c8a96780cbb72037a54f824fc57800"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个字体  <br /></td></tr>
 <tr class="separator:aa4c8a96780cbb72037a54f824fc57800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a1923cedc16f677620b3c257b985d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_t_g_i___timer.html">TGI_Timer</a> *TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tgi_8h.html#a16a1923cedc16f677620b3c257b985d8">tgi_application_create_timer</a> (<a class="el" href="struct_t_g_i___application.html">TGI_Application</a> *self, unsigned int delay, int type, void callback(<a class="el" href="struct_t_g_i___timer.html">TGI_Timer</a> *timer))</td></tr>
-<tr class="memdesc:a16a1923cedc16f677620b3c257b985d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个计时器  <br /></td></tr>
-<tr class="separator:a16a1923cedc16f677620b3c257b985d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fd6182f5707fe9dc74acea5bfd76e9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_t_g_i___timer.html">TGI_Timer</a> *TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tgi_8h.html#af6fd6182f5707fe9dc74acea5bfd76e9">tgi_application_create_timer</a> (<a class="el" href="struct_t_g_i___application.html">TGI_Application</a> *self, unsigned int delay, int type, void TGIAPI callback(<a class="el" href="struct_t_g_i___timer.html">TGI_Timer</a> *timer))</td></tr>
+<tr class="memdesc:af6fd6182f5707fe9dc74acea5bfd76e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个计时器  <br /></td></tr>
+<tr class="separator:af6fd6182f5707fe9dc74acea5bfd76e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad5cea148bea3c2c3ee2ecb5757f55fb"><td class="memItemLeft" align="right" valign="top">static void TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tgi_8h.html#aad5cea148bea3c2c3ee2ecb5757f55fb">tgi_window_free</a> (<a class="el" href="struct_t_g_i___window.html">TGI_Window</a> *self)</td></tr>
 <tr class="memdesc:aad5cea148bea3c2c3ee2ecb5757f55fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭窗口并释放资源  <br /></td></tr>
 <tr class="separator:aad5cea148bea3c2c3ee2ecb5757f55fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,6 +383,9 @@ typedef struct <a class="el" href="struct_t_g_i___rect.html">TGI_Rect</a>&#160;<
 <tr class="memitem:a171db09262d753ed2b852b386aa761cd"><td class="memItemLeft" align="right" valign="top">static int TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tgi_8h.html#a171db09262d753ed2b852b386aa761cd">tgi_graphics_draw_image_ex</a> (<a class="el" href="struct_t_g_i___graphics.html">TGI_Graphics</a> *self, const <a class="el" href="struct_t_g_i___image.html">TGI_Image</a> *image, float x, float y, float src_x, float src_y, float src_width, float src_height)</td></tr>
 <tr class="memdesc:a171db09262d753ed2b852b386aa761cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的位置绘制图片的部分  <br /></td></tr>
 <tr class="separator:a171db09262d753ed2b852b386aa761cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae718f71e56a89fcf0250b98f00a3ee46"><td class="memItemLeft" align="right" valign="top">static int TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tgi_8h.html#ae718f71e56a89fcf0250b98f00a3ee46">tgi_graphics_draw_image_rect_ex</a> (<a class="el" href="struct_t_g_i___graphics.html">TGI_Graphics</a> *self, const <a class="el" href="struct_t_g_i___image.html">TGI_Image</a> *image, float x, float y, float width, float height, float src_x, float src_y, float src_width, float src_height)</td></tr>
+<tr class="memdesc:ae718f71e56a89fcf0250b98f00a3ee46"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的位置绘制图片的部分  <br /></td></tr>
+<tr class="separator:ae718f71e56a89fcf0250b98f00a3ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a020b8ed8f3a9a9d5e6abfe569df4216e"><td class="memItemLeft" align="right" valign="top">static int TGIAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tgi_8h.html#a020b8ed8f3a9a9d5e6abfe569df4216e">tgi_graphics_draw_text</a> (<a class="el" href="struct_t_g_i___graphics.html">TGI_Graphics</a> *self, const char *text, const <a class="el" href="struct_t_g_i___font.html">TGI_Font</a> *font, float x, float y)</td></tr>
 <tr class="memdesc:a020b8ed8f3a9a9d5e6abfe569df4216e"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置绘制文字  <br /></td></tr>
 <tr class="separator:a020b8ed8f3a9a9d5e6abfe569df4216e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -504,7 +507,7 @@ typedef struct <a class="el" href="struct_t_g_i___rect.html">TGI_Rect</a>&#160;<
 <dd>
 <a class="el" href="tgi_8h.html#aa4c8a96780cbb72037a54f824fc57800" title="创建一个字体">tgi_application_create_font</a> </dd>
 <dd>
-<a class="el" href="tgi_8h.html#a16a1923cedc16f677620b3c257b985d8" title="创建一个计时器">tgi_application_create_timer</a> </dd></dl>
+<a class="el" href="tgi_8h.html#af6fd6182f5707fe9dc74acea5bfd76e9" title="创建一个计时器">tgi_application_create_timer</a> </dd></dl>
 
 </div>
 </div>
@@ -767,7 +770,7 @@ typedef struct <a class="el" href="struct_t_g_i___rect.html">TGI_Rect</a>&#160;<
 </div><div class="memdoc">
 
 <p>计时器对象类型 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="tgi_8h.html#a16a1923cedc16f677620b3c257b985d8" title="创建一个计时器">tgi_application_create_timer</a> </dd>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="tgi_8h.html#af6fd6182f5707fe9dc74acea5bfd76e9" title="创建一个计时器">tgi_application_create_timer</a> </dd>
 <dd>
 <a class="el" href="tgi_8h.html#aac8b7b2e3e52eb4ce78d45a282d29452" title="关闭计时器并释放资源">tgi_timer_free</a> </dd></dl>
 
@@ -1225,8 +1228,8 @@ typedef struct <a class="el" href="struct_t_g_i___rect.html">TGI_Rect</a>&#160;<
 
 </div>
 </div>
-<a id="a16a1923cedc16f677620b3c257b985d8" name="a16a1923cedc16f677620b3c257b985d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16a1923cedc16f677620b3c257b985d8">&#9670;&#160;</a></span>tgi_application_create_timer()</h2>
+<a id="af6fd6182f5707fe9dc74acea5bfd76e9" name="af6fd6182f5707fe9dc74acea5bfd76e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6fd6182f5707fe9dc74acea5bfd76e9">&#9670;&#160;</a></span>tgi_application_create_timer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1255,7 +1258,7 @@ typedef struct <a class="el" href="struct_t_g_i___rect.html">TGI_Rect</a>&#160;<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void &#160;</td>
+          <td class="paramtype">void TGIAPI &#160;</td>
           <td class="paramname"><em>callback</em>TGI_Timer *timer&#160;</td>
         </tr>
         <tr>
@@ -2017,6 +2020,109 @@ typedef struct <a class="el" href="struct_t_g_i___rect.html">TGI_Rect</a>&#160;<
 </dl>
 <dl class="section note"><dt>注解</dt><dd>若图片大小与矩形的大小不等，则会拉伸图片以适应矩形大小 </dd></dl>
 <dl class="section return"><dt>返回</dt><dd>若函数成功，返回非零值；否则，返回0 </dd></dl>
+
+</div>
+</div>
+<a id="ae718f71e56a89fcf0250b98f00a3ee46" name="ae718f71e56a89fcf0250b98f00a3ee46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae718f71e56a89fcf0250b98f00a3ee46">&#9670;&#160;</a></span>tgi_graphics_draw_image_rect_ex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int TGIAPI tgi_graphics_draw_image_rect_ex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_t_g_i___graphics.html">TGI_Graphics</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_t_g_i___image.html">TGI_Image</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>src_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>src_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>src_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>src_height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在指定的位置绘制图片的部分 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>绘图对象指针 </td></tr>
+    <tr><td class="paramname">image</td><td>图片对象指针 </td></tr>
+    <tr><td class="paramname">x</td><td>表示绘制左上角的x坐标（单位为逻辑像素） </td></tr>
+    <tr><td class="paramname">y</td><td>表示绘制左上角的y坐标（单位为逻辑像素） </td></tr>
+    <tr><td class="paramname">width</td><td>表示绘制的宽度（单位为逻辑像素） </td></tr>
+    <tr><td class="paramname">height</td><td>表示绘制的高度（单位为逻辑像素） </td></tr>
+    <tr><td class="paramname">src_x</td><td>表示截取图片左上角的x坐标（单位为真实像素） </td></tr>
+    <tr><td class="paramname">src_y</td><td>表示截取图片左上角的y坐标（单位为真实像素） </td></tr>
+    <tr><td class="paramname">src_width</td><td>表示截取图片的宽度（单位为真实像素） </td></tr>
+    <tr><td class="paramname">src_height</td><td>表示截取图片的高度（单位为真实像素） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>若函数成功，返回非零值；否则，返回0 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v0.2.0 </dd></dl>
 
 </div>
 </div>

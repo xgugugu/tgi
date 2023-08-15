@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tiny Graphics Interfaces: 文件列表</title>
+<title>Tiny Graphics Interfaces: C:/Users/xczws/Documents/tgi/src/tgi.hpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,18 +67,37 @@ $(function() {
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">文件列表</div></div>
+  <div class="headertitle"><div class="title">tgi.hpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">这里列出了所有文档化的文件，并附带简要说明:</div><div class="directory">
-<div class="levels">[详情级别 <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><span id="img_0_" class="iconfopen" onclick="toggleFolder('0_')">&#160;</span><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" target="_self">src</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="tgi_8h_source.html"><span class="icondoc"></span></a><a class="el" href="tgi_8h.html" target="_self">tgi.h</a></td><td class="desc">Tiny Graphics Interfaces </td></tr>
-<tr id="row_0_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="tgi_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="tgi_8hpp.html" target="_self">tgi.hpp</a></td><td class="desc">Tiny Graphics Interfaces for C++ </td></tr>
-</table>
-</div><!-- directory -->
-</div><!-- contents -->
+
+<p>Tiny Graphics Interfaces for C++  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="tgi_8h_source.html">tgi.h</a>&quot;</code><br />
+</div>
+<p><a href="tgi_8hpp_source.html">浏览源代码.</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Tiny Graphics Interfaces for C++ </p>
+<dl class="section author"><dt>作者</dt><dd>xgugugu</dd></dl>
+<p>TGI图形库的C++接口 </p><dl class="section attention"><dt>注意</dt><dd>C++接口的所有类及方法均为宏自动生成，不保证其正确性 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><b>C++类基本使用方法（例）</b> </dd>
+<dd>
+C语言接口： <div class="fragment"><div class="line">TGI_Obj* obj = tgi_factory_create_obj(factory); <span class="comment">// 创建</span></div>
+<div class="line">tgi_obj_foo(obj, arg1, arg2); <span class="comment">// 使用</span></div>
+<div class="line">tgi_obj_free(obj); <span class="comment">// 释放</span></div>
+</div><!-- fragment --> </dd>
+<dd>
+C++接口： <div class="fragment"><div class="line">tgi::Obj obj = factory.create_obj(); <span class="comment">// 创建</span></div>
+<div class="line">obj.foo(arg1, arg2); <span class="comment">// 使用</span></div>
+<div class="line">obj.free(); <span class="comment">// 释放</span></div>
+</div><!-- fragment --> </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
