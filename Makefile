@@ -11,6 +11,11 @@ $(TARGET): $(OBJS)
 
 all: $(TARGET)
 	
+.PHONY: build
+build: 
+	zip -q -r -j build/libtgi-x86_64.zip src/tgi.h src/tgi.hpp build/libtgi.a
+	zip -q -r -j build/libtgi-x86_64-devcpp-c-example.zip src/tgi.h src/tgi.hpp build/libtgi.a projects/devcpp-c/HelloWorld.dev projects/devcpp-c/main.cpp
+	zip -q -r -j build/libtgi-x86_64-devcpp-cpp-example.zip src/tgi.h src/tgi.hpp build/libtgi.a projects/devcpp-cpp/HelloWorld.dev projects/devcpp-cpp/main.cpp
 
 .PHONY: clean
 clean:
@@ -18,4 +23,7 @@ clean:
 
 .PHONY: test
 test: all
-	gcc test.c -o test -Lbuild -ltgi -std=c99 -lgdi32 -lwinmm -lgdiplus -static -s && ./test
+	gcc src/*.c test.c -o test -std=c99 -lgdi32 -lwinmm -lgdiplus -static -g && ./test
+.PHONY: testpp
+testpp: all
+	g++ test.cpp -o test -std=c++98 -Lbuild -ltgi -lgdi32 -lwinmm -lgdiplus -static -g && ./test

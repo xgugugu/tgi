@@ -394,7 +394,7 @@ struct vtable_TGI_Application_t
     TGI_Image *(TGIAPI *create_image_from_file)(TGI_Application *self, const char *filename);
     TGI_Font *(TGIAPI *create_font)(TGI_Application *self, const char *name, float size, TGI_FontStyle style);
     TGI_Timer *(TGIAPI *create_timer)(TGI_Application *self, unsigned int delay, int type,
-                                      void callback(TGI_Timer *timer));
+                                      void TGIAPI callback(TGI_Timer *timer));
 };
 /**
  * @brief 关闭应用并释放资源
@@ -481,7 +481,7 @@ static inline TGI_Font *TGIAPI tgi_application_create_font(TGI_Application *self
  * @see TGI_Timer
  */
 static inline TGI_Timer *TGIAPI tgi_application_create_timer(TGI_Application *self, unsigned int delay, int type,
-                                                             void callback(TGI_Timer *timer))
+                                                             void TGIAPI callback(TGI_Timer *timer))
 {
     return self->vptr->create_timer(self, delay, type, callback);
 }
@@ -686,10 +686,8 @@ struct vtable_TGI_Graphics_t
 {
     void(TGIAPI *free)(TGI_Graphics *self);
     int(TGIAPI *clear)(TGI_Graphics *self, TGI_Color color);
-    // 画笔
     int(TGIAPI *set_color)(TGI_Graphics *self, TGI_Color color);
     int(TGIAPI *set_width)(TGI_Graphics *self, float width);
-    // 绘图
     int(TGIAPI *draw_line)(TGI_Graphics *self, float x1, float y1, float x2, float y2);
     int(TGIAPI *draw_arc)(TGI_Graphics *self, float x, float y, float width, float height, float start_angle,
                           float sweep_angle);
@@ -708,6 +706,8 @@ struct vtable_TGI_Graphics_t
                                  float height);
     int(TGIAPI *draw_image_ex)(TGI_Graphics *self, const TGI_Image *image, float x, float y, float src_x, float src_y,
                                float src_width, float src_height);
+    int(TGIAPI *draw_image_rect_ex)(TGI_Graphics *self, const TGI_Image *image, float x, float y, float width,
+                                    float height, float src_x, float src_y, float src_width, float src_height);
     int(TGIAPI *draw_text)(TGI_Graphics *self, const char *text, const TGI_Font *font, float x, float y);
     int(TGIAPI *draw_text_rect)(TGI_Graphics *self, const char *text, const TGI_Font *font, float x, float y,
                                 float width, float height);
@@ -929,6 +929,27 @@ static inline int TGIAPI tgi_graphics_draw_image_ex(TGI_Graphics *self, const TG
                                                     float src_x, float src_y, float src_width, float src_height)
 {
     return self->vptr->draw_image_ex(self, image, x, y, src_x, src_y, src_width, src_height);
+}
+/**
+ * @brief 在指定的位置绘制图片的部分
+ * @param self 绘图对象指针
+ * @param image 图片对象指针
+ * @param x 表示绘制左上角的x坐标（单位为逻辑像素）
+ * @param y 表示绘制左上角的y坐标（单位为逻辑像素）
+ * @param width 表示绘制的宽度（单位为逻辑像素）
+ * @param height 表示绘制的高度（单位为逻辑像素）
+ * @param src_x 表示截取图片左上角的x坐标（单位为真实像素）
+ * @param src_y 表示截取图片左上角的y坐标（单位为真实像素）
+ * @param src_width 表示截取图片的宽度（单位为真实像素）
+ * @param src_height 表示截取图片的高度（单位为真实像素）
+ * @return 若函数成功，返回非零值；否则，返回0
+ * @since v0.2.0
+ */
+static inline int TGIAPI tgi_graphics_draw_image_rect_ex(TGI_Graphics *self, const TGI_Image *image, float x, float y,
+                                                         float width, float height, float src_x, float src_y,
+                                                         float src_width, float src_height)
+{
+    return self->vptr->draw_image_rect_ex(self, image, x, y, width, height, src_x, src_y, src_width, src_height);
 }
 /**
  * @brief 在指定位置绘制文字

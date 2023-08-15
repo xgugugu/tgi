@@ -212,6 +212,15 @@ int TGIAPI tgi_graphics_gdi_draw_image_ex(TGI_Graphics *_self, const TGI_Image *
     return !GdipDrawImagePointRect(self->g, ((TGI_Image_GDI *)image)->img, x * self->scaling, y * self->scaling, src_x,
                                    src_y, src_width, src_height, UnitPixel);
 }
+int TGIAPI tgi_graphics_gdi_draw_image_rect_ex(TGI_Graphics *_self, const TGI_Image *image, float x, float y,
+                                               float width, float height, float src_x, float src_y, float src_width,
+                                               float src_height)
+{
+    TGI_Graphics_GDI *self = (TGI_Graphics_GDI *)_self;
+    return !GdipDrawImageRectRect(self->g, ((TGI_Image_GDI *)image)->img, x * self->scaling, y * self->scaling,
+                                  width * self->scaling, height * self->scaling, src_x, src_y, src_width, src_height,
+                                  UnitPixel, NULL, NULL, NULL);
+}
 int TGIAPI tgi_graphics_gdi_draw_text(TGI_Graphics *_self, const char *text, const TGI_Font *_font, float x, float y)
 {
     TGI_Graphics_GDI *self = (TGI_Graphics_GDI *)_self;
@@ -251,6 +260,7 @@ const struct vtable_TGI_Graphics_t vtable_TGI_Graphics_GDI = {
     .draw_image = tgi_graphics_gdi_draw_image,
     .draw_image_rect = tgi_graphics_gdi_draw_image_rect,
     .draw_image_ex = tgi_graphics_gdi_draw_image_ex,
+    .draw_image_rect_ex = tgi_graphics_gdi_draw_image_rect_ex,
     .draw_text = tgi_graphics_gdi_draw_text,
     .draw_text_rect = tgi_graphics_gdi_draw_text_rect,
 };
@@ -823,7 +833,7 @@ exit1:
     return NULL;
 }
 TGI_Timer *TGIAPI tgi_application_gdi_create_timer(TGI_Application *_self, unsigned int delay, int type,
-                                                   void callback(TGI_Timer *timer))
+                                                   void TGIAPI callback(TGI_Timer *timer))
 {
     TGI_Timer_GDI *self = malloc(sizeof(TGI_Timer_GDI));
     self->base.vptr = &vtable_TGI_Timer_GDI;
