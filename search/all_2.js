@@ -15,7 +15,7 @@ var searchData=
   ['tgi_5fbackend_12',['TGI_Backend',['../tgi_8h.html#a3b57a8714c241a1caeebf5bf5bb0c2bd',1,'TGI_Backend:&#160;tgi.h'],['../tgi_8h.html#a624c14ac215121eea337bcec59d79871',1,'TGI_Backend:&#160;tgi.h']]],
   ['tgi_5fbackend_5fgdi_13',['TGI_BACKEND_GDI',['../tgi_8h.html#a624c14ac215121eea337bcec59d79871a6da5212577c763f823864598ffc2c9c6',1,'tgi.h']]],
   ['tgi_5fcolor_14',['tgi_color',['../tgi_8h.html#a5b261f7b2f862553f01b2d6a921e2297',1,'tgi.h']]],
-  ['tgi_5fcolor_15',['TGI_Color',['../tgi_8h.html#a713a67068a59e1743c4c872bdf2ccb54',1,'tgi.h']]],
+  ['tgi_5fcolor_15',['TGI_Color',['../tgi_8h.html#af39c966e0e62ab1a95c3f2fb50a1d9b6',1,'tgi.h']]],
   ['tgi_5fcolor_16',['TGI_COLOR',['../tgi_8h.html#afea1db7b19285c71f0a60772b48f78ae',1,'tgi.h']]],
   ['tgi_5fencoding_17',['TGI_Encoding',['../tgi_8h.html#a0de9d510a239599091db0fcf66f81c6c',1,'TGI_Encoding:&#160;tgi.h'],['../tgi_8h.html#a8407d419fff72f7f9afabe367f490e8f',1,'TGI_Encoding:&#160;tgi.h']]],
   ['tgi_5fencoding_5fansi_18',['TGI_ENCODING_ANSI',['../tgi_8h.html#a8407d419fff72f7f9afabe367f490e8fa88b81a567d387f24025c410ebedbbf72',1,'tgi.h']]],

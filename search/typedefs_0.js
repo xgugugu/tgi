@@ -2,7 +2,7 @@ var searchData=
 [
   ['tgi_5fapplication_0',['TGI_Application',['../tgi_8h.html#a81f503738ed4546372c1579ad7aba929',1,'tgi.h']]],
   ['tgi_5fbackend_1',['TGI_Backend',['../tgi_8h.html#a3b57a8714c241a1caeebf5bf5bb0c2bd',1,'tgi.h']]],
-  ['tgi_5fcolor_2',['TGI_Color',['../tgi_8h.html#a713a67068a59e1743c4c872bdf2ccb54',1,'tgi.h']]],
+  ['tgi_5fcolor_2',['TGI_Color',['../tgi_8h.html#af39c966e0e62ab1a95c3f2fb50a1d9b6',1,'tgi.h']]],
   ['tgi_5fencoding_3',['TGI_Encoding',['../tgi_8h.html#a0de9d510a239599091db0fcf66f81c6c',1,'tgi.h']]],
   ['tgi_5ffont_4',['TGI_Font',['../tgi_8h.html#a5a1938f05d583d28be2118d13e3b2960',1,'tgi.h']]],
   ['tgi_5ffontstyle_5',['TGI_FontStyle',['../tgi_8h.html#a5e7d92c1c0673e8584b184e3ad04a3a6',1,'tgi.h']]],
