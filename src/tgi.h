@@ -261,7 +261,7 @@ typedef struct TGI_Timer
  * @brief 颜色类型
  * @see TGI_COLOR
  */
-typedef unsigned long long TGI_Color;
+typedef unsigned int TGI_Color;
 /**
  * @brief 创建一个ARGB颜色
  * @param a 透明度（0-255）

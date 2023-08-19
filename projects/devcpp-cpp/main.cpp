@@ -1,4 +1,4 @@
-#include "src/tgi.hpp"
+#include "tgi.hpp"
 
 using namespace tgi;
 

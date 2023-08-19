@@ -231,6 +231,36 @@ METHOD(TGI_Font *, create_font, const char *, name, float, size, TGI_FontStyle, 
 METHOD(TGI_Timer *, create_timer, unsigned int, delay, int, type, TimerCallback, callback)
 END_CLASS()
 
+#undef BEGIN_CLASS
+#undef END_CLASS
+#undef GET_MACRO
+#undef NAME
+#undef NAME2
+#undef NAME4
+#undef NAME6
+#undef NAME8
+#undef NAME10
+#undef NAME12
+#undef NAME14
+#undef NAME16
+#undef NAME18
+#undef NAME20
+#undef VAR
+#undef VAR2
+#undef VAR4
+#undef VAR6
+#undef VAR8
+#undef VAR10
+#undef VAR12
+#undef VAR14
+#undef VAR16
+#undef VAR18
+#undef VAR20
+#undef NEW
+#undef METHOD
+#undef METHOD1
+#undef METHOD2
+
 } // namespace tgi
 #endif
 
