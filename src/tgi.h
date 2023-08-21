@@ -59,6 +59,7 @@ typedef enum TGI_Encoding
 typedef struct TGI_Application
 {
     const struct vtable_TGI_Application_t *vptr;
+    void *userdata;
 } TGI_Application;
 
 /**
@@ -85,6 +86,7 @@ typedef struct TGI_Application
 typedef struct TGI_Window
 {
     const struct vtable_TGI_Window_t *vptr;
+    void *userdata;
 } TGI_Window;
 /**
  * @brief 窗口风格类型
@@ -156,6 +158,7 @@ typedef enum TGI_WindowStyle
 typedef struct TGI_Graphics
 {
     const struct vtable_TGI_Graphics_t *vptr;
+    void *userdata;
 } TGI_Graphics;
 
 /**
@@ -171,6 +174,7 @@ typedef struct TGI_Graphics
 typedef struct TGI_Image
 {
     const struct vtable_TGI_Image_t *vptr;
+    void *userdata;
 } TGI_Image;
 
 /**
@@ -183,6 +187,7 @@ typedef struct TGI_Image
 typedef struct TGI_Font
 {
     const struct vtable_TGI_Font_t *vptr;
+    void *userdata;
 } TGI_Font;
 /**
  * @brief 字体样式类型
@@ -255,6 +260,7 @@ typedef enum TGI_TextAlign
 typedef struct TGI_Timer
 {
     const struct vtable_TGI_Timer_t *vptr;
+    void *userdata;
 } TGI_Timer;
 
 /**
