@@ -745,7 +745,7 @@ TGI_Window *TGIAPI tgi_window_gdi_create(TGI_Application *app)
     wndclass.lpfnWndProc = tgi_window_gdi_WndProc;
     wndclass.hInstance = GetModuleHandleW(NULL);
     wndclass.lpszClassName = self->classname;
-    wndclass.style = CS_DBLCLKS;
+    wndclass.style = CS_DBLCLKS | CS_VREDRAW | CS_HREDRAW;
     wndclass.hCursor = LoadCursorA(NULL, IDC_ARROW);
     RegisterClassW(&wndclass);
     // 创建窗口
